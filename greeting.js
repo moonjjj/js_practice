@@ -44,4 +44,4 @@ function init(){
 init();
 //init() -> loadname() -> 로컬스토리지에서 user_ls(사용자 이름)을 가져와서 없다면 go askforname 있다면 paingGreeting(사용자이름을 매개변수로 가져감)이동
 //없을시-> askforname() 숨겨놨던 form태그를 보이게 만들고, submit enent를 추가한다.->서브밋(엔터)를 할 경우에 
-//있을시-> paingGreeting(사용자이름)
+//있을시-> paingGreeting(사용자이름)!
