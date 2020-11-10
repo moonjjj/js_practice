@@ -1,8 +1,4 @@
-div{
-   height: 200px;
-   width: 200px;
-   background-color: antiquewhite; 
-}
+
 
 .form, .greetings{
    display:none;
@@ -10,6 +6,28 @@ div{
 .showing{
    display:block;
 }
-h1{
-   font-size: 10vw;
+
+
+@keyframes fadeIn{
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+}
+
+.bgImage{
+   position :absolute;
+   top:0;
+   
+   z-index:-1;
+   animation: fadeIn 0.5s linear;
+}
+
+body{
+   background-color: #2c3e50;
+   display:flex;
+   align-items: center;
+   flex-direction: column;
 }
