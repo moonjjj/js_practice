@@ -20,7 +20,7 @@
 .bgImage{
    position :absolute;
    top:0;
-   
+   width:70vw;
    z-index:-1;
    animation: fadeIn 0.5s linear;
 }
@@ -30,4 +30,12 @@ body{
    display:flex;
    align-items: center;
    flex-direction: column;
+}
+.js-clock{
+   font-size:7vw;
+}
+ul, li{
+   list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
