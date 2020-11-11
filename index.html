@@ -7,17 +7,20 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <h1>먹킷리스트!</h1>
     <div class="js-clock">
         <h1>00:00</h1>
 
     </div>
     <form class="js-form form">
-        <input type="text" placeholder="What is your name?" />
+        <input type="text" placeholder="이름을 입력해주세요." />
     </form>
-    <h4 class="js-greetings greetings"></h4>
+    <p class="js-yourMenu"></p>
+    <h1 class="js-greetings greetings"></h1>
     <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
+        <input type="text" placeholder="먹고싶은거 적어봐요!" />
     </form>
+
     <ul class="js-toDoList">
         
     </ul>
@@ -25,5 +28,6 @@
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
+    <button onclick="setTimeout">새로고침</button>
 </body>
 </html>

@@ -40,3 +40,19 @@ ul, li{
     padding: 0;
 
 }
+h1,h4{
+   color:white;
+}
+input{
+   font-size:2vw;
+   border-radius: 10px;
+   margin:.5vw;
+   padding:10px;
+}
+.js-toDoList>li{
+   margin: 1.5vw;
+   font-size:2vw;
+}
+.js-yourMenu{
+   color:white;
+}

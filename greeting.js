@@ -3,6 +3,7 @@ const input = form.querySelector("input");
 const greeting = document.querySelector(".js-greetings");
 const USER_LS="currentUser";
 const SHOWING_CN="showing"; //showing이라는 클래스를 classList.add로 가져올 것이다 (.showing에 대한 css가 이미 적혀있음)
+const yourMenu=document.querySelector(".js-yourMenu");
 
 function saveName(text){
     localStorage.setItem(USER_LS, text);
@@ -24,7 +25,15 @@ function askForName() {
 function paingGreeting(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `hello ${text}`;
+    greeting.innerText = `안녕하세요 ${text}님`;
+}
+
+function whatMenu(){
+    var menuArr=["햄버거🍔","고기🍖","라면🍜","초밥🍣","디저트🍰","맥주🍻","길거리음식🍢"];
+    console.log(menuArr);
+    var randomArr=Math.floor(Math.random()*6+1);
+    console.log(menuArr[randomArr]);
+    yourMenu.innerText='당신은 지금 '+menuArr[randomArr]+'이 땡긴다!';
 }
 
 function loadName() {
@@ -34,6 +43,7 @@ function loadName() {
         askForName();
     } else{
         paingGreeting(currentUser); //currentuser의 value값을 매개변수로 가져감.
+        whatMenu();
     }
 }
 
