@@ -41,13 +41,13 @@ function loadName() {
         askForName();
     } else{
         paingGreeting(currentUser); //currentuser의 value값을 매개변수로 가져감.
-        whatMenu();
         setInterval(whatMenu,3000);
     }
 }
 
 function init(){
     loadName();
+    whatMenu();
     
 }
 
