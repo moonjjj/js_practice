@@ -55,4 +55,12 @@ input{
 }
 .js-yourMenu{
    color:white;
+   border:1px solid;
+   border-radius: 10px;
+   padding:10px;
+   transform: skew(10deg);
+}
+.js-yourMenu:hover, .js-yourMenu:active{
+   transform: none;
+   background-color: black;
 }

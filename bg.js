@@ -12,6 +12,7 @@ function paintImage(imgNumber){
     image.classList.add('bgImage');
     body.appendChild(image);
     image.addEventListener("loaded", handleImgLoad);
+
 }
 
 function genRandom(){
@@ -21,8 +22,10 @@ function genRandom(){
 
 function init(){
     const randomnumber = genRandom();
-    paintImage(randomnumber);
-    // setTimeout('location.reload()',3000)
+    setInterval(function(){
+        paintImage(randomnumber);
+    },500); //약0.5초후에 함수를 실행함.
 }
+var count = 30;
 
 init();
