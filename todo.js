@@ -37,7 +37,7 @@ function paintToDo(text){ //text = currentvalue = input에 저장된 값 //적�
     delBtn.addEventListener('click',deleteToDo);
     delBtn.innerHTML="❌";
     search.setAttribute('href',`https://map.naver.com/v5/search/${text}`);
-    search.innerHTML=`${text}맛집!`;
+    search.innerHTML=`${text}맛집찾기`;
     search.classList.add('searchA');
     
     span.innerText= text;

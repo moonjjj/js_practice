@@ -23,7 +23,7 @@
    width:70vw;
    z-index:-1;
    animation: fadeIn 0.5s linear;
-   opacity: 0.33;
+   opacity: 0.7;
 }
 
 body{
@@ -41,8 +41,15 @@ ul, li{
     padding: 0;
     color:white;
 }
-li{
-   border:1px solid;
+li {
+   border: 1px solid;
+   border-radius: 7px;
+   background: black;
+   font-weight: 600;
+   padding-left: 8em;
+   text-align: center;
+   padding-top: 1em;
+   padding-bottom: 1em;
 }
 h1,h4{
    color:white;
@@ -88,4 +95,23 @@ input{
    font-size:1vw;
    border:1px solid;
    background-color:#efefef;
+   padding: 3.8px;
+   border-radius: 10px;
+}
+.searchA:hover{
+   animation-name:ahover;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-in-out;
+}
+
+span {
+   margin-right: 6em;
+}
+button {
+   width: 35px;
+   font-size: 5px;
+   border-radius: unset;
+}
+button:hover{
+    transform:scale(1.2);   
 }
