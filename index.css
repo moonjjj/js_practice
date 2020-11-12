@@ -80,7 +80,6 @@ input{
    border:2px solid;
    background-color: black;
 }
-
 @keyframes menu{
    from{
       transform: scale(1);   
@@ -90,6 +89,7 @@ input{
       background-color: black;
    }
 }
+
 .searchA{
    text-decoration: none;
    font-size:1vw;
@@ -100,18 +100,43 @@ input{
 }
 .searchA:hover{
    animation-name:ahover;
-   animation-duration: 0.5s;
+   animation-duration: 2.5s;
    animation-timing-function: ease-in-out;
+}
+@keyframes ahover{
+   100%{background-color:black};
+   75%{background-color:rgba(0, 0, 0, 0.68)};
+   50%{background-color:gray};
+   25%{background-color:beige};
+   0%{background-color:white};
 }
 
 span {
    margin-right: 6em;
 }
 button {
+
    width: 35px;
    font-size: 5px;
    border-radius: unset;
 }
 button:hover{
-    transform:scale(1.2);   
+   animation-name:button;
+   animation-duration: 1.5s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: 30;
+   
+}
+
+
+@keyframes button{
+   0%{
+      transform:skewX(20deg);
+   }
+   50%{
+      transform:skewX(-20deg);
+   }
+   100%{
+      transform:skew(20deg);
+   }
 }
