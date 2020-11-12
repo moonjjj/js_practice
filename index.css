@@ -23,6 +23,7 @@
    width:70vw;
    z-index:-1;
    animation: fadeIn 0.5s linear;
+   opacity: 0.33;
 }
 
 body{
@@ -38,7 +39,10 @@ ul, li{
    list-style: none;
     margin: 0 auto;
     padding: 0;
-
+    color:white;
+}
+li{
+   border:1px solid;
 }
 h1,h4{
    color:white;
@@ -58,9 +62,30 @@ input{
    border:1px solid;
    border-radius: 10px;
    padding:10px;
-   transform: skew(10deg);
+   transition: all 300ms linear;
+   animation-name:menu;
+   animation-duration: 2.9s;
+   animation-timing-function:ease-out;
+   animation-iteration-count: infinite;
 }
 .js-yourMenu:hover, .js-yourMenu:active{
    transform: none;
+   border:2px solid;
    background-color: black;
+}
+
+@keyframes menu{
+   from{
+      transform: scale(1);   
+   }
+   50%{
+      transform: scale(1.2);
+      background-color: black;
+   }
+}
+.searchA{
+   text-decoration: none;
+   font-size:1vw;
+   border:1px solid;
+   background-color:#efefef;
 }

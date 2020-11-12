@@ -31,12 +31,19 @@ function paintToDo(text){ //text = currentvalue = input에 저장된 값 //적�
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
     const span = document.createElement("span");
+    const search = document.createElement("a");
     const newId = toDos.length + 1;
-    delBtn.innerHTML="✔";
+    // const reb = window.open(`https://search.naver.com/search.naver?where=image&sm=tab_jum&query=${text}`,"PopupWin", "width=500,height=600");
     delBtn.addEventListener('click',deleteToDo);
+    delBtn.innerHTML="❌";
+    search.setAttribute('href',`https://map.naver.com/v5/search/${text}`);
+    search.innerHTML=`${text}맛집!`;
+    search.classList.add('searchA');
+    
     span.innerText= text;
-    li.appendChild(delBtn); //LI요소 안에 추가한다. BTN과 SPAN을
     li.appendChild(span);
+    li.appendChild(search);
+    li.appendChild(delBtn); //LI요소 안에 추가한다. BTN과 SPAN을
     li.id = newId;
     toDoList.appendChild(li); //TODOLIST안에 추가 LI를
 

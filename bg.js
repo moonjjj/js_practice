@@ -22,10 +22,7 @@ function genRandom(){
 
 function init(){
     const randomnumber = genRandom();
-    setInterval(function(){
         paintImage(randomnumber);
-    },500); //약0.5초후에 함수를 실행함.
 }
-var count = 30;
 
 init();
