@@ -58,10 +58,9 @@ h1{
    font-size:2em;
 }
 input{
-   font-size:2vw;
    border-radius: 10px;
-   margin:.5vw;
-   padding:10px;
+    margin: .5vw;
+    padding: 10px;
 }
 .js-toDoList>li{
    margin-top: 1.5vw;
@@ -76,7 +75,7 @@ input{
    transition: all 300ms linear;
    animation-name:menu;
    animation-duration: 2.9s;
-   animation-timing-function:ease-out;
+   animation-timing-function:ease-in-out;
    animation-iteration-count: infinite;
 }
 .js-yourMenu:hover, .js-yourMenu:active{
@@ -108,11 +107,11 @@ input{
    animation-timing-function: ease-in-out;
 }
 @keyframes ahover{
-   100%{background-color:black};
-   75%{background-color:rgba(0, 0, 0, 0.68)};
-   50%{background-color:gray};
-   25%{background-color:beige};
    0%{background-color:white};
+   25%{background-color:beige};
+   50%{background-color:gray};
+   75%{background-color:rgba(0, 0, 0, 0.68)};
+   100%{background-color:black};
 }
 
 span {
@@ -126,8 +125,8 @@ button {
 }
 button:hover{
    animation-name:button;
-   animation-duration: 1.5s;
-   animation-timing-function: ease-in-out;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-out;
    animation-iteration-count: 30;
    
 }
@@ -137,8 +136,14 @@ button:hover{
    0%{
       transform:skewX(20deg);
    }
+   25%{
+      transform:skewY(-20deg);
+   }
    50%{
       transform:skewX(-20deg);
+   }
+   75%{
+      transform:skewY(20deg);
    }
    100%{
       transform:skew(20.5deg);
@@ -156,7 +161,7 @@ button:hover{
    }
    input{
       width:100%;
-      font-size:1.8em;
+      font-size: 1em;
       margin-left: -10px;
    }
    span{

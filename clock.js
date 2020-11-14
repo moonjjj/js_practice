@@ -2,6 +2,7 @@ const clockContainer = document.querySelector(".js-clock");
 const clockTitle = clockContainer.querySelector("h1");
 
 
+
 function getTime() {
     const date= new Date();
     const minutes = date.getMinutes();
@@ -14,22 +15,9 @@ function getTime() {
 }
 //setInterval()이란 함수는 첫번째 인자로 실행할 함수를 받고, 두번째 인자로 실행하고싶은 시간(ms)로
 
-function sayHello(){
-    const date = new Date();
-    const hour = date.getHours();
-    if(hour>=5 && hour<=11){
-        console.log('say goodmorning');
-    }
-    else if(hour>=12 && hour<=17){
-        console.log('say goodafternoon');
-    }
-    else{
-        console.log('say goodnight');
-    }
-}
+
 function init() {
     getTime();
     setInterval(getTime, 1000);
-    sayHello();
 }
 init();

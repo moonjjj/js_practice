@@ -5,6 +5,8 @@ const USER_LS="currentUser";
 const SHOWING_CN="showing"; //showing이라는 클래스를 classList.add로 가져올 것이다 (.showing에 대한 css가 이미 적혀있음)
 const yourMenu=document.querySelector(".js-yourMenu");
 
+
+
 function saveName(text){
     localStorage.setItem(USER_LS, text);
 }
@@ -23,16 +25,19 @@ function askForName() {
 }
 
 function paingGreeting(text){
-    form.classList.remove(SHOWING_CN);
+    form.classList.remove(SHOWING_CN); //클래스에 대한 css를 미리 작성해둔다음 그 클래스 리스트를 제거
+    //하고 추가하는 방식으로 보였다 안 보였다하게 만들수도 있음.
     greeting.classList.add(SHOWING_CN);
     greeting.innerText = `안녕하세요 ${text}님😊`;
 }
+
 
 function whatMenu(){
     var menuArr=["햄버거🍔","고기🍖","라면🍜","초밥🍣","디저트🍰","맥주🍻","길거리음식🍢"];
     var randomArr=Math.floor(Math.random()*6+1);
     yourMenu.innerText='당신은 지금 '+menuArr[randomArr]+'이 땡긴다!';
 }
+
 
 function loadName() {
     const currentUser = localStorage.getItem(USER_LS); //localstorage(서버)에 userls를 가져와서 currentuser에 담는다
@@ -48,7 +53,6 @@ function loadName() {
 function init(){
     loadName();
     whatMenu();
-    
 }
 
 init();
