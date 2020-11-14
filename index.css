@@ -54,6 +54,9 @@ li {
 h1,h4{
    color:white;
 }
+h1{
+   font-size:2em;
+}
 input{
    font-size:2vw;
    border-radius: 10px;
@@ -61,8 +64,9 @@ input{
    padding:10px;
 }
 .js-toDoList>li{
-   margin: 1.5vw;
-   font-size:2vw;
+   margin-top: 1.5vw;
+    font-size: 2vw;
+    margin-left: -10px;
 }
 .js-yourMenu{
    color:white;
@@ -139,4 +143,24 @@ button:hover{
    100%{
       transform:skew(20.5deg);
    }
+}
+
+@media(max-width:500px){
+   li{
+      width:100%;
+      margin-left:-10px;
+   }
+   ul{
+      margin:0;
+      width:100%;
+   }
+   input{
+      width:100%;
+      font-size:1.8em;
+      margin-left: -10px;
+   }
+   span{
+      font-size:2em;
+   }
+
 }
