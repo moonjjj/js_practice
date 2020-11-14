@@ -2,6 +2,8 @@ const toDoForm = document.querySelector(".js-toDoForm");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector(".js-toDoList");
 const sayHi = document.querySelector(".sayHello");
+const inputName = document.querySelector(".inputName");
+const greetings = document.querySelector(".js-greetings");
 
 const TODOS_LS='toDos';
 
@@ -95,7 +97,7 @@ function sayHello(){
     else if(hour>=0 && hour<5){ //밤0시~새벽5시 밤
         console.log('say goodnight');
         var night=document.createTextNode('야식이 땡기는 밤이에요!');
-        sayHi.apend(night);
+        sayHi.append(night);
     }
     else{ //낮 5시~12시 저녁
         console.log('say goodevening');
@@ -106,9 +108,21 @@ function sayHello(){
 
 
 function init(){
-    sayHello();
     loadToDos();
     toDoForm.addEventListener("submit", handlerSubmit);
+    
+    if(greetings==null){
+        console.log('이름 값 null');
+        console.log(inputName.value);
+        console.log(greetings!=null);
+        console.log(greetings==null);
+    }
+    else if(greetings!=null){
+        console.log('이름 값 yes');
+        console.log(greetings!=null);
+        console.log(greetings==null);
+        sayHello();
+    }
 }
 
 init();
