@@ -48,7 +48,6 @@ li {
    border-radius: 7px;
    background: black;
    font-weight: 600;
-   padding-left: 8em;
    text-align: center;
    padding-top: 1em;
    padding-bottom: 1em;
@@ -63,18 +62,19 @@ h1{
 input{
    border-radius: 10px;
     margin: .5vw;
-    padding: 10px;
+    padding: 10px 30px;
 }
 .js-toDoList>li{
    margin-top: 1.5vw;
     font-size: 2vw;
-    margin-left: -10px;
+    padding: 10px 60px;
+    
 }
 .js-yourMenu{
    color:white;
    border:1px solid;
    border-radius: 10px;
-   padding:10px;
+   padding:10px 20px;
    transition: all 300ms linear;
    animation-name:menu;
    animation-duration: 2.9s;
@@ -103,19 +103,20 @@ input{
    background-color:#efefef;
    padding: 3.8px;
    border-radius: 10px;
+   margin-left: 100px;
 }
 .searchA:hover{
    animation-name:ahover;
-   animation-duration: 2.5s;
+   animation-duration: 0.5s;
    animation-timing-function: ease-in-out;
 }
-@keyframes ahover{
-   0%{background-color:white};
-   25%{background-color:beige};
-   50%{background-color:gray};
-   75%{background-color:rgba(0, 0, 0, 0.68)};
-   100%{background-color:black};
-}
+      @keyframes ahover{
+         0%{background-color:white};
+         25%{background-color:beige};
+         50%{background-color:gray};
+         75%{background-color:rgba(0, 0, 0, 0.68)};
+         100%{background-color:black};
+      }
 
 span {
    margin-right: 6em;
@@ -156,7 +157,6 @@ button:hover{
 @media(max-width:500px){
    li{
       width:100%;
-      margin-left:-10px;
    }
    ul{
       margin:0;
