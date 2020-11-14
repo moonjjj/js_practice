@@ -170,6 +170,9 @@ button:hover{
    span{
       font-size:2em;
    }
+   .js-toDoList>li{
+      font-size: 8px;
+   }
 }
 
 .sayHello{
