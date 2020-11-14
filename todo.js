@@ -1,8 +1,7 @@
 const toDoForm = document.querySelector(".js-toDoForm");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector(".js-toDoList");
-const sayHi=document.createElement("p");
-const sayHiP=toDoForm.appendChild(sayHi);
+const sayHi = document.querySelector(".sayHello");
 
 const TODOS_LS='toDos';
 
@@ -80,21 +79,28 @@ function loadToDos(){ //todo리스트를 가져와서 값이 있다면 foreach�
 function sayHello(){
     const date = new Date();
     const hour = date.getHours();
+    sayHi.classList.add('sayHello');
     if(hour>=5 && hour<=11){ // 새벽5시~아침11시 아침
         console.log('say goodmorning');
+        var morning=document.createTextNode('좋은 아침이에요!');
+        sayHi.prepend(morning);
         
     }
     else if(hour>=12 && hour<=17){ //낮12시~낮5시 낮
         console.log('say goodafternoon');
+        var afternoon=document.createTextNode('좋은 점심이에요!');
         //form안에 새로운 엘리멘트 만들기
-        const afternoon=document.createTextNode('hello~~');
-        sayHiP.prepend(afternoon);
+        sayHi.prepend(afternoon);
     }
     else if(hour>=0 && hour<5){ //밤0시~새벽5시 밤
         console.log('say goodnight');
+        var night=document.createTextNode('좋은 밤이에요!');
+        sayHi.apend(night);
     }
     else{ //낮 5시~12시 저녁
         console.log('say goodevening');
+        var evening=document.createTextNode('좋은 저녁이에요!');
+        sayHi.appendChild(evening);
     }
 }
 

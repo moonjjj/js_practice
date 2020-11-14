@@ -1,4 +1,6 @@
-
+body{
+   min-width:350px;
+}
 
 .form, .greetings{
    display:none;
@@ -56,6 +58,7 @@ h1,h4{
 }
 h1{
    font-size:2em;
+   margin-bottom: 0;
 }
 input{
    border-radius: 10px;
@@ -167,5 +170,12 @@ button:hover{
    span{
       font-size:2em;
    }
+}
 
+.sayHello{
+   font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 600;
 }
