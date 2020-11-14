@@ -82,24 +82,24 @@ function sayHello(){
     sayHi.classList.add('sayHello');
     if(hour>=5 && hour<=11){ // 새벽5시~아침11시 아침
         console.log('say goodmorning');
-        var morning=document.createTextNode('좋은 아침이에요!');
+        var morning=document.createTextNode('아침 든든히 챙겨먹으세요!');
         sayHi.prepend(morning);
         
     }
     else if(hour>=12 && hour<=17){ //낮12시~낮5시 낮
         console.log('say goodafternoon');
-        var afternoon=document.createTextNode('좋은 점심이에요!');
+        var afternoon=document.createTextNode('점심엔 밥이죠!');
         //form안에 새로운 엘리멘트 만들기
         sayHi.prepend(afternoon);
     }
     else if(hour>=0 && hour<5){ //밤0시~새벽5시 밤
         console.log('say goodnight');
-        var night=document.createTextNode('좋은 밤이에요!');
+        var night=document.createTextNode('야식이 땡기는 밤이에요!');
         sayHi.apend(night);
     }
     else{ //낮 5시~12시 저녁
         console.log('say goodevening');
-        var evening=document.createTextNode('좋은 저녁이에요!');
+        var evening=document.createTextNode('화목한 저녁식사 하세요!');
         sayHi.appendChild(evening);
     }
 }
