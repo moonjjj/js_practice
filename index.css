@@ -156,16 +156,15 @@ button:hover{
 
 @media(max-width:500px){
    li{
-      width:100%;
+      width: 60%;
    }
    ul{
       margin:0;
       width:100%;
    }
    input{
-      width:100%;
-      font-size: 1em;
-      margin-left: -10px;
+      text-align: center;
+    font-size: 1em;
    }
    span{
       font-size:2em;
