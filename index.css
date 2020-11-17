@@ -64,6 +64,9 @@ input{
     margin: .5vw;
     padding: 10px 30px;
 }
+input:focus{
+   border: 3px solid black;
+}
 .js-toDoList>li{
    margin-top: 1.5vw;
     font-size: 2vw;
