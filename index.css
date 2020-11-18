@@ -107,6 +107,7 @@ input:focus{
    padding: 3.8px;
    border-radius: 10px;
    margin-left: 100px;
+   display:inline-block;
 }
 .searchA:hover{
    animation-name:ahover;
