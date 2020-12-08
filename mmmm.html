@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+        text-shadow: 0 0 3px;
+        font-weight: 800;
+        line-height: 2;
+        color: lightslategrey;
+    }
+    /* 첫번째 테이블 */
+    .table--container{
+        max-width:770px;
+        margin:0 auto;
+    }
+    .table--project tr{
+        border:1px solid black;
+    }
+    .table--project td{
+        width:150px;
+    }
+    .table--project{
+        border-collapse: collapse;
+    }
+    .table--project th, .table--project td{
+        border:1px solid black;
+        padding:12.3px;
+    }
+
+    /* 두번쨰 테이블 */
+    .table--individual{
+        text-align: center;
+        width:500px;
+        max-width:980px;
+        border-collapse: collapse;
+        border:1px solid black;
+        margin-top:20px;
+    }
+    table--individual td{
+        width:150px;
+    }
+    .table--individual th, .table--individual td{
+        border:1px solid black;
+        padding:10px;
+    }
+    .td--input{
+        display:flex;
+        border-collapse: collapse;
+    }
+
+    /* 공통 */
+    tr:nth-child(odd){
+        background-color: rgb(243, 243, 243);
+    }
+    th{
+        background-color: lightgrey;
+    }
+    td:hover{
+        background-color: rgb(243, 243, 243);
+    }
+    table{
+        box-shadow: 0 0 6px gray;
+    }
+    input:focus, textarea:focus{
+        box-shadow: 0 0 1px 6px rgba(0, 0, 0, .075), 0 0 6px rgba(81, 167, 232, .5);
+        border-color: #51a7e8 !important;
+    }
+
+    
+
+</style>
+<body>
+    <div class="table--container">
+        <a href="nnnn.html">home</a>
+        <p class="title">Check List</p>
+    </div>
+    <div class="table--container">
+        <table class="table--project">
+            <th>project</th>
+            <th>subject</th>
+            <th>Duty list</th>
+            <th>Schedule , M/T</th>
+            <tr>
+                <td><input type="text" name="" placeholder="프로젝트명"></td>
+                <td><input type="text" placeholder="주제"></td>
+                <td><input type="text" placeholder="할 일"></td>
+                <td rowspan="3"><textarea name="" id="" cols="20" rows="8" placeholder="스케쥴 & 미팅"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" placeholder="프로젝트명"></td>
+                <td><input type="text" placeholder="주제"></td>
+                <td><input type="text" placeholder="할 일"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" placeholder="프로젝트명"></td>
+                <td><input type="text" placeholder="주제"></td>
+                <td><input type="text" placeholder="할 일"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table--container">
+        <table class="table--individual">
+            <tr>
+                <th colspan="3">individual / delay check</th>
+                <th>duty keyword</th>
+            </tr>
+            <tr>
+                <td colspan="3" rowspan="5"><textarea name="" id="" cols="70" rows="15" placeholder="개인 사항 / 지연사항"></textarea></td>
+                <td><div class="td--input"><input type="text" placeholder="의무 사항"><input type="checkbox" checked></div></td>
+            </tr>
+            <tr>
+                <td><div class="td--input"><input type="text" placeholder="의무 사항"><input type="checkbox" ></div></td>
+            </tr>
+            <tr>
+                <td><div class="td--input"><input type="text" placeholder="의무 사항"><input type="checkbox"></div></td>
+            </tr>
+            <tr>
+                <td><div class="td--input"><input type="text" placeholder="의무 사항"><input type="checkbox"></div></td>
+            </tr>
+            <tr>
+                <td><div class="td--input"><input type="text" placeholder="의무 사항"><input type="checkbox"></div></td>
+            </tr>
+            <tr>
+                <td>입금</td>
+                <td>출금</td>
+                <td>잔금</td>
+                <td><div class="td--input"><input type="text" placeholder="의무 사항"><input type="checkbox"></div></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="입금한 금액을 입력하시오"></td>
+                <td><input type="text" placeholder="출금한 금액을 입력하시오"></td>
+                <td><input type="text" placeholder="잔액"></td>
+                <td><div class="td--input"><input type="text" placeholder="의무 사항"><input type="checkbox"></div></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
