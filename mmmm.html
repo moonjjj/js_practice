@@ -14,7 +14,40 @@
         font-weight: 800;
         line-height: 2;
         color: lightslategrey;
+        display: table;
+        width: 200px;
+        margin: 20px auto;
     }
+    .title:hover{
+        color: lightseagreen;
+    }
+    .title--input{
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+        border: 3px solid lightgray;
+        border-radius: 8px;
+    }
+    .table--submitBtn{
+        width: 200px;
+        margin: 20px auto;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        /* height: 60px; */
+        padding: 10px;
+        font-size: 26px;
+        font-weight: 800;
+        color: white;
+        background: rgb(82, 109, 191);
+        border-radius: 13px;
+    }
+    .table--submitBtn:hover{
+        background-color: lightskyblue;
+        color: black;
+    }
+
     /* 첫번째 테이블 */
     .table--container{
         max-width:770px;
@@ -77,9 +110,10 @@
 
 </style>
 <body>
+    <form action="#" method="post">
     <div class="table--container">
         <a href="nnnn.html">home</a>
-        <p class="title">Check List</p>
+        <p class="title">Check List<input type="text" placeholder="제목을 입력하시오" class="title--input" required></p>
     </div>
     <div class="table--container">
         <table class="table--project">
@@ -88,10 +122,10 @@
             <th>Duty list</th>
             <th>Schedule , M/T</th>
             <tr>
-                <td><input type="text" name="" placeholder="프로젝트명"></td>
-                <td><input type="text" placeholder="주제"></td>
-                <td><input type="text" placeholder="할 일"></td>
-                <td rowspan="3"><textarea name="" id="" cols="20" rows="8" placeholder="스케쥴 & 미팅"></textarea></td>
+                <td><input type="text" name="" placeholder="프로젝트명" required></td>
+                <td><input type="text" placeholder="주제" required></td>
+                <td><input type="text" placeholder="할 일" required></td>
+                <td rowspan="3"><textarea name="" id="" cols="20" rows="8" placeholder="스케쥴 & 미팅" required></textarea></td>
             </tr>
             <tr>
                 <td><input type="text" name="" placeholder="프로젝트명"></td>
@@ -142,5 +176,9 @@
             </tr>
         </table>
     </div>
+    <div class="table--container">
+        <input type="submit" value="보내기" class="table--submitBtn">
+    </div>
+    </form>
 </body>
 </html>
